@@ -29,7 +29,10 @@ export function A11yControls() {
         aria-expanded={isOpen}
         aria-controls="a11y-controls"
       >
-        <Accessibility className="h-5 w-5" />
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" fill="white" />
+          <path d="M12 2 a10 10 0 0 0 0 20 z" fill="black" />
+        </svg>
       </Button>
 
       {isOpen && (

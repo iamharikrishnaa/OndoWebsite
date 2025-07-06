@@ -78,7 +78,7 @@ export default function ScrollingTestimonials() {
   const resumeAutoplay = () => setAutoplay(true)
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
@@ -106,7 +106,7 @@ export default function ScrollingTestimonials() {
                 <div className="bg-white rounded-xl p-8 md:p-10 shadow-lg border border-gray-100">
                   <div className="flex justify-center mb-6">
                     {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-black fill-black" />
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
                     ))}
                   </div>
                   <p className="text-lg md:text-xl text-gray-700 text-center mb-8 italic">
