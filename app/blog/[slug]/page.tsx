@@ -9,6 +9,12 @@ import ShareButtons from "@/components/blog/share-buttons"
 import RelatedPosts from "@/components/blog/related-posts"
 import { blogPosts } from "@/data/blog-posts"
 
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
 export const generateMetadata = ({ params }: { params: { slug: string } }): Metadata => {
   const post = blogPosts.find((post) => post.slug === params.slug)
 
