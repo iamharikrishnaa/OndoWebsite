@@ -9,6 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+   basePath: isGithubPages ? '/OndoWebsite' : '',
+  assetPrefix: isGithubPages ? '/OndoWebsite/' : '',
   output:"export",
   reactStrictMode:true,
 }
